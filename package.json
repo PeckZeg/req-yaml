@@ -1,0 +1,23 @@
+{
+  "name": "req-yaml",
+  "version": "0.0.1",
+  "description": "reqyaml(filename) lets you load YML/YAMML files",
+  "main": "index.js",
+  "author": "PeckZeg",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "require",
+    "yaml",
+    "yml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:PeckZeg/req-yaml.git"
+  },
+  "dependencies": {
+    "js-yaml": "^3.5.3"
+  }
+}
