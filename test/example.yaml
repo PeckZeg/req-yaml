@@ -1,0 +1,6 @@
+---
+  Director:
+    name: Spielberg
+    Movies:
+      - Movie: {title: E.T., year: 1975}
+      - Movie: {title: Jaws, year: 1982}

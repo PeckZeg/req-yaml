@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Apps\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Peck\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'G:\\req-yaml',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Peck\AppData\Roaming\npm-cache\req-yaml\0.2.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Peck\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle req-yaml@0.2.1~prepublish: req-yaml@0.2.1
+11 silly lifecycle req-yaml@0.2.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Peck\\AppData\\Roaming\\npm-cache\\req-yaml\\0.2.1\\package.tgz',
+12 verbose tar pack   'G:\\req-yaml' ]
+13 verbose tarball C:\Users\Peck\AppData\Roaming\npm-cache\req-yaml\0.2.1\package.tgz
+14 verbose folder G:\req-yaml
+15 verbose addLocalTarball adding from inside cache C:\Users\Peck\AppData\Roaming\npm-cache\req-yaml\0.2.1\package.tgz
+16 verbose correctMkdir C:\Users\Peck\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd req-yaml@0.2.1
+18 verbose afterAdd C:\Users\Peck\AppData\Roaming\npm-cache\req-yaml\0.2.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Peck\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Peck\AppData\Roaming\npm-cache\req-yaml\0.2.1\package\package.json written
+21 silly publish { name: 'req-yaml',
+21 silly publish   version: '0.2.1',
+21 silly publish   description: 'reqyaml(filename) lets you load YML/YAMML files',
+21 silly publish   author: { name: 'PeckZeg' },
+21 silly publish   license: 'ISC',
+21 silly publish   main: 'lib/req-yaml.js',
+21 silly publish   scripts:
+21 silly publish    { test: 'mocha  --compilers coffee:coffee-script/register test/req-yaml.coffee',
+21 silly publish      build: 'coffee -o lib/ -c src/req-yaml.coffee' },
+21 silly publish   keywords: [ 'require', 'yaml', 'yml' ],
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+ssh://git@github.com/PeckZeg/req-yaml.git' },
+21 silly publish   dependencies: { 'app-root-path': '^1.3.0', 'js-yaml': '^3.5.3' },
+21 silly publish   devDependencies: { lodash: '^4.15.0' },
+21 silly publish   readme: 'YML/YAML File Loader\r\n====================\r\n\r\n```javascript\r\nconst reqyaml = require(\'req-yaml\');\r\nvar yaml = reqyaml(\'./config.yaml\');\r\n```\r\n\r\n## Changelog\r\n\r\n### 0.2.0\r\n\r\n* Recode in CoffeeScript\r\n* add `resolve(filepath)` method\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '667905877506c1fd49932c617ca058b668693627',
+21 silly publish   bugs: { url: 'https://github.com/PeckZeg/req-yaml/issues' },
+21 silly publish   homepage: 'https://github.com/PeckZeg/req-yaml#readme',
+21 silly publish   _id: 'req-yaml@0.2.1',
+21 silly publish   _shasum: '88d96243e80b1742c5b27186285ff1c9a861937c',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name req-yaml
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'req-yaml',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'req-yaml',
+26 silly mapToRegistry   name: 'req-yaml',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/req-yaml
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Peck\AppData\Roaming\npm-cache\req-yaml\0.2.1\package.tgz
+30 verbose request uri https://registry.npmjs.org/req-yaml
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 14:25:50
+33 verbose request using bearer token for auth
+34 verbose request id a5ec248a9aeb3070
+35 http request PUT https://registry.npmjs.org/req-yaml
+36 http 403 https://registry.npmjs.org/req-yaml
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 07 Sep 2016 06:25:51 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lax1440-LAX',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1473229551.042514,VS0,VE222',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\Peck\AppData\Roaming\npm-cache\registry.npmjs.org\req-yaml on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.2.1." : req-yaml
+40 verbose stack     at makeError (C:\Users\Peck\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\Peck\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+40 verbose stack     at Request._callback (C:\Users\Peck\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+40 verbose stack     at Request.self.callback (C:\Users\Peck\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:200:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (C:\Users\Peck\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1067:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Users\Peck\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid req-yaml
+43 verbose cwd G:\req-yaml
+44 error Windows_NT 10.0.14393
+45 error argv "D:\\Apps\\nodejs\\node.exe" "C:\\Users\\Peck\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v4.4.7
+47 error npm  v3.10.5
+48 error code E403
+49 error "You cannot publish over the previously published version 0.2.1." : req-yaml
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
